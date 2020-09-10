@@ -6,6 +6,6 @@ public class NewMain {
 	}
 	
 	/*public static void main1(String... args){
-		System.out.println("TESTING NEW MAIN");
+		System.out.println("TESTING NEW MAIN varargs");
 	}*/
 }

@@ -10,5 +10,5 @@ class Classes3A { }
 //private class ClassX { } 
 
 class Classes4A { 
-	private class ClassX { }
+	//private class ClassX { }
 }
