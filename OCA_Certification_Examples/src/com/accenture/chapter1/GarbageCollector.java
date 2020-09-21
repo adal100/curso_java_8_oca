@@ -3,7 +3,7 @@ package com.accenture.chapter1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GarabageCollector {
+public class GarbageCollector {
 	
 	private static List<Object> lista = new ArrayList<>();
 	
@@ -22,7 +22,7 @@ public class GarabageCollector {
 
 	
 	public static void main(String[] args) {
-		new GarabageCollector().referenceTest();
+		new GarbageCollector().referenceTest();
 	}
 	
 	@Override
