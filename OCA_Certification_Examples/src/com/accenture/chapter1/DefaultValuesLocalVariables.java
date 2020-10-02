@@ -4,7 +4,7 @@ public class DefaultValuesLocalVariables {
 	
 	public void test(){
 		int x;
-		
+		//boolean alwaysTrue = true;
 		if(true) {
 			x = 1;
 		}

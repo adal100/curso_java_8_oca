@@ -14,6 +14,7 @@ public class ScopeVariables {
 		//System.out.println(j); // No compila
 		System.out.println(x);
 		System.out.println(new ScopeVariables().h);
+		//System.out.println(h); //No compila
 		System.out.println(new ScopeVariables().x);
 	}
 	
@@ -22,7 +23,7 @@ public class ScopeVariables {
 	private void $(long n) {
 		String m; int l = 0;
 		
-//		if(m == null) { // No compila
+		//if(m == null) { // No compila
 		if(l == 0) {
 			int k = 1;
 			

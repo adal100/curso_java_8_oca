@@ -3,7 +3,7 @@ package com.accenture.chapter2;
 import java.io.IOException;
 
 public class UnaryOperators {
-	
+
 	public static void main(String[] args)  {
 		
 		/////Operadores de complemento lógico y negación.
@@ -40,5 +40,24 @@ public class UnaryOperators {
 		
 		///// Operadores de incremento y decremento
 		
+		int m = 4;
+		int n = 3;
+		int x9 = ++m + --n * m++ / --n;
+		
+		//Siguiendo la regla, evalua todos los unary operators al mismo nivel y luego continua con las operaciones de menor orden de precedencia.
+		//Opcion 1 Regla: 5 + 2 * 5 / 1 = 15 
+		
+		//Opcion 2 : 5 + 2 * 4 / 1 =  13 // No evalua primero los operadores de multiplicación, sino todos los unarios como van apareciendo.
+		System.out.println("x9: " + x9);
+		
+		int test = 0;
+		if(test++ == 0) {
+			System.out.println("Test:" + test);
+		}
+		
+		int test2 = 0;
+		if(++test2 == 0) {
+			System.out.println("Test2:" + test2);
+		}
 	}
 }
