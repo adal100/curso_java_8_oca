@@ -19,10 +19,10 @@ public class IfElse {
 		if(!z) System.out.println(z);
 		
 		//Ejemplo 4
-		boolean a = true;
+		boolean a = false;
 		if(a); System.out.println(a);
 		
-		//Ejemplo 5
+		/*//Ejemplo 5
 		int b = true;
 		if(b)
 			System.out.println(b);
@@ -66,6 +66,8 @@ public class IfElse {
 				if(g > 1)
 					System.out.println(g + 3);
 				else
-					System.out.println(g + 4);
+					System.out.println(g + 4);*/
+		
+		
 	}
 }

@@ -70,7 +70,8 @@ public class FlujoSwitch {
 		final String MX = "MX";
 		
 		switch(cadena) {
-			
+			case "A" :
+				//int b1 = 0;
 			/*case 'a' : //No compila porque no es un String, sino un char
 				System.out.println("Monday");
 				break; */
@@ -125,6 +126,9 @@ public class FlujoSwitch {
 			case 'z':
 				System.out.println("z");
 				break;
+			
+			/*case 128:
+				System.out.println("z");*/
 				
 			/*case 122: //'z'
 				System.out.println("122");

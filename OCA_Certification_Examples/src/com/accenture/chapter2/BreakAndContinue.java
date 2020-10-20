@@ -4,10 +4,11 @@ public class BreakAndContinue {
 	public static void main(String args[]) {
 		int x = 0;
 
+		//Ejemplo 1
 		EXTERNO: for (int i = 0; i < 10; i++) {
 
 			if (i == 2) {
-				// continue INTERNO; //No compila, INTERNO no existe aún en este punto.
+				 // continue INTERNO; //No compila, INTERNO no existe aún en este punto.
 			}
 
 			INTERNO: for (int j = 0; j < 10; j++) {
@@ -18,13 +19,19 @@ public class BreakAndContinue {
 			}
 		}
 
+		//Ejemplo 2
 		EXTERNO: while (x == 1) {
 			continue EXTERNO;
 		}
-
+		
+		//Ejemplo 3
 		breakExample();
 		
+		//Ejemplo 4
 		continueExample();
+		
+		//Ejemplo 5 (Fuera del scope del examen)
+		labelTest();
 	}
 
 	private static void breakExample() {
@@ -38,9 +45,9 @@ public class BreakAndContinue {
 				if (list[i][j] == searchValue) {
 					positionX = i;
 					positionY = j;
-					// break PARENT_LOOP; // [1, 1]
-					// break; // [2, 0]
-					// Sin break // [2, 2]
+				    //break PARENT_LOOP; // [1, 1]
+					//break; 			  // [2, 0]
+					// Sin break 		  // [2, 2]
 				}
 			}
 		}
@@ -76,7 +83,6 @@ public class BreakAndContinue {
 			}
 			
 			PRINT: System.out.println("Else");
-			
 		}
 		
 		BLOQUE : {

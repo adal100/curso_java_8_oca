@@ -19,7 +19,7 @@ public class FlujoFor {
 		
 		for(int j = 0; j < 10; j++)
 			System.out.println("Dentro del for");
-			//System.out.println(j); // No compila, no pertenece al for, por lo tanto la variable j no está en scope. 
+		//	System.out.println(j); // No compila, no pertenece al for, por lo tanto la variable j no está en scope. 
 		
 		for(int x = 0; x < 10; x++)
 			for(int j = 0; j < 10; j++)
@@ -29,7 +29,12 @@ public class FlujoFor {
 		int nn = 0;
 		int mm = 0;
 		int hk = 0;
-		for(System.out.println(mm++), returnAnInt(), mm = 1 ; mm < 10; System.out.println(mm++), returnAnInt(), hk = returnAnInt(), nn += mm){
+		for(
+				System.out.println(mm++), returnAnInt(), mm = 1 ; 						//Inicializacion
+				mm < 10; 																//Condicion
+				System.out.println(mm++), returnAnInt(), hk = returnAnInt(), nn += mm 	//Actualizacion		
+			)
+		{
 			System.out.println(hk);
 		}
 	}

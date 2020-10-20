@@ -7,7 +7,7 @@ public class Switch {
 	public static void main(String args[]) {
 
 		// Ejemplo 1
-		int x = 1;
+		/*int x = 1;
 		switch (x) {
 			default: System.out.println("Default"); break;
 			case 1:
@@ -51,11 +51,11 @@ public class Switch {
 				break;
 			case "FRIDAY":
 				System.out.println("FRIDAY");
-		}
+		}*/
 		
 		// Ejemplo 4
 		long x1 = 1;
-		switch (x1) {
+		switch ( x1) {
 			default: System.out.println("Default"); break;
 			case 1:
 				System.out.println("1");

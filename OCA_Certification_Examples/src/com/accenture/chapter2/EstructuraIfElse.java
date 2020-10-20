@@ -35,13 +35,13 @@ public class EstructuraIfElse {
 		if(p == 1) System.out.println("p == 1"); 
 		else 
 			System.out.println("p != 1");
-			System.out.println("Dentro del else"); // Esta línea no está ligada de ninguna manera al else.
+		System.out.println("Dentro del else"); // Esta línea no está ligada de ninguna manera al else.
 			
 		//Escenario 7
 		if(p == 1) 
 			System.out.println("p == 1");
-			System.out.println("Dentro del if"); 
-		//else //No compila
+			//System.out.println("Dentro del if"); 
+		else //No compila
 			System.out.println("p != 1"); 
 		
 		////// Prestar atención a expresiones que no evaluan a valores booleanos
@@ -66,6 +66,7 @@ public class EstructuraIfElse {
 		
 		//Else if con varios else 
 		int hourOfDay = 5;
+		
 		if(hourOfDay < 12) {
 			System.out.println("Buenos días");
 		} else if(hourOfDay < 9) {
@@ -78,9 +79,7 @@ public class EstructuraIfElse {
 		if(hourOfDay < 12)
 			System.out.println("Buenos días");
 		else 
-			if(hourOfDay < 9)
-				System.out.println("Nunca se ejecuta");
-			else 
-				System.out.println("Buenas tardes");
+			if(hourOfDay < 9) System.out.println("Nunca se ejecuta");
+			else  System.out.println("Buenas tardes");
 	}
 }
