@@ -33,7 +33,7 @@ public class ArreglosReferencias {
 		System.out.println(arreglo.length); 	//10
 		System.out.println(arregloA.length); 	//3
 		
-		
+	
 		
 		//Ejemplo 4 - Inicialización default de los elementos del arreglo.
 		System.out.println("4----------------"); 	

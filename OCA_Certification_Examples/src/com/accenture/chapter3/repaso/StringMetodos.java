@@ -10,23 +10,23 @@ public class StringMetodos {
 			str += i;
 			i++;
 		}
-		System.out.println(str.length);
+		//System.out.println(str.length);
 		
 		
 		
 		//Ejemplo 2
-		String char0 = "01234".charAt(0);
-		String numbers = char0 + "1234";
-		System.out.println(numbers.equals("01234"));
+		//String char0 = "01234".charAt(0);
+		//String numbers = char0 + "1234";
+		//System.out.println(numbers.equals("01234"));
 		
 		
 		
-		//Ejemplo 3 - indexOf() 
+		//Ejemplo 3
 		System.out.println("012345".indexOf("6", 6)); 
 		
 		
 		
-		//Ejemplo 4 - substring
+		//Ejemplo 4
 		System.out.println("01234".substring(0,0)); 	
 		
 		
@@ -59,22 +59,29 @@ public class StringMetodos {
 		
 		
 		//Ejemplo 9
-		System.out.println("abc".contains("bc")); 		//true
-		System.out.println("".contains("")); 			//true
+		System.out.println("abc".contains("bc")); 		
+		System.out.println("".contains("")); 			
 		
 		
 		
 		//Ejemplo 10
-		System.out.println("abc".replace("a", 'A'));
+		System.out.println("abc".replace('a', 'A'));
 		System.out.println("abc".replace("a", new StringBuilder("A")));
 		System.out.println("abc".replace("d", "a")); 
-		System.out.println("".replace("", "123")); 						
-		
+		System.out.println("".replace("", "123"));
+		System.out.println("----------Test");
+		System.out.println("abc".replace("", "123")); //123a123b123c123
+		 
 		
 		
 		//Ejemplo 11
-		System.out.println("\t\n  abc  \t\r\t   ".trim()); 		//abc
-		System.out.println("\t\n  a\t b c  \t\r\t   ".trim());	//a	 b c
+		System.out.println("\t\n  abc  \t\r\t   ".trim()); 		
+		System.out.println("\t\n  a\t b c  \t\r\t   ".trim());	
+		
+		
+		
+		//Ejemplo 12
+		System.out.println("hola".concat(" mundo").toUpperCase());	
 	}
 	
 }
